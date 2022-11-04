@@ -16,10 +16,9 @@ const getData = async() => {
         const gameName = resultData[i].name;
         const gameRating = resultData[i].rating;
         const numberOfTags = resultData[i].tags.length;
-        content.innerHTML += `
-        Name: ${gameName}
+        content.innerHTML += `Name: ${gameName}
         Rating: ${gameRating}
-        Number of tags: ${gameRating}
+        Number of tags: ${numberOfTags}
         `;
     }
 }
