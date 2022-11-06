@@ -12,18 +12,23 @@ const getData = async() => {
 
     console.log(resultData); 
 
-    for (let i = 0; i < 8; i++){
+    for (let i = 0; i < resultData.length; i++){
+        if (i === 8) {
+            break;
+        }
         const gameName = resultData[i].name;
         const gameRating = resultData[i].rating;
         const numberOfTags = resultData[i].tags.length;
-        content.innerHTML += `Name: ${gameName}
-        Rating: ${gameRating}
-        Number of tags: ${numberOfTags}
+        content.innerHTML += `<div> <ul>
+        <li> Name: ${gameName} </li>
+        <li> Rating: ${gameRating} </li>
+        <li> Number of tags: ${numberOfTags} </li>
+        </ul> </div>
         `;
     }
 }
 
-getData(); 
+getData();
 
 
 //Loading display...
