@@ -33,8 +33,6 @@ const getData = async() => {
     }
 }
 
-    getData();
 
 
-//Loading display...
-//Handle any potential errors in the code (try / catch)
+getData();
